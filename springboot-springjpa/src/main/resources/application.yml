@@ -1,0 +1,8 @@
+##使用yml文件替代properties，写法不同。 .改成: 等于号改成: ,注意空格，树状形式
+spring:
+ profiles:
+   active: test
+
+
+
+

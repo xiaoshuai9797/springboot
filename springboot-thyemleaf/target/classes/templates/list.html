@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+<table border="1">
+    <tr>
+        <td>编号</td>
+        <td>id</td>
+        <td>姓名</td>
+        <td>年龄</td>
+        <td>操作</td>
+    </tr>
+
+    <tr th:each="user,var : ${userList}">
+        <td th:text="${var.count}"></td>
+        <td th:text="${user.id}"></td>
+        <td th:text="${user.name}"></td>
+        <td th:text="${user.age}"></td>
+        <td>
+            <a th:href="@{/user/editUserUi(id=${user.id})}">编辑</a>
+            |
+            <a th:href="@{/user/deleteUser(id=${user.id})}">刪除</a>
+        </td>
+    </tr>
+
+</table>
+
+
+<a th:href="@{/user/addUserUi}">添加用户</a>
+
+
+
+
+</body>
+</html>

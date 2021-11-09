@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+我是第一个springboot应用！<br/>
+<a th:href="@{http://www.baidu.com}">绝对路径</a> <BR/>
+
+<a th:href="@{/show}">相对路径</a><br/>
+
+<a th:href="@{/show1(id=1,name=zhagnsan)}">相对路径?传参</a> <br/>
+
+<a th:href="@{/path/{id}/show2(id=10,name=wanger)}"> 相对路径传参-restful风格和？传参的风格</a> <br/>
+
+<a th:href="@{/path/{id}/{name}/show3(id=1,name=zhagnsan)}"> 相对路径传参-restful风格</a> <br/>
+
+<hr/>
+
+
+
+
+<a th:href="@{/user/addUserUi}">添加用户的界面</a><br/>
+
+
+<a th:href="@{/user/selectUser}">查询用户的界面</a><br/>
+
+</body>
+</html>

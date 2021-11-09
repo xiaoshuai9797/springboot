@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<form th:action="@{/user/editUser}" method="post">
+    <input type="hidden" name="id" th:value="${user.id}"/>
+    用户名：<input type="text"  name="name" th:value="${user.name}"><br>
+    年龄：<input  type="text" name="age" th:value="${user.age}"/><br>
+    <input type="submit" value="提交">
+</form>
+
+</body>
+</html>

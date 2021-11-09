@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<form th:action="@{/user/addUser}" method="post">
+    用户名：<input type="text"  name="name"/><font color="red" th:errors="${user.name}"></font><br>
+    年龄：<input  type="text" name="age"/><font color="red" th:errors="${user.age}"></font><br>
+    <!--当实体类属性上加了数据效验的注解，则需要加上<font>-->
+    <input type="submit" value="提交">
+</form>
+
+
+</body>
+</html>
